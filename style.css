@@ -22,7 +22,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
-    transition: transform 0.3s ease;
 }
 
 .profile-btn {
@@ -38,6 +37,7 @@ body {
 
 .profile-btn:active .profile-pic {
     animation: bounce 0.5s ease;
+    animation-iteration-count: infinite;
 } 
 
 @keyframes bounce {
@@ -69,6 +69,7 @@ body {
 .profile-btn:active::after {
     opacity: 1;
     transform: translate(-50%, -10px); /* Moves text up slightly */
+    animation-iteration-count: infinite;
 }
 
 
