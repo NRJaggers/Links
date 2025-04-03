@@ -36,8 +36,10 @@ body {
 }
 
 .profile-btn:active .profile-pic {
-    animation: bounce 0.5s ease;
-    animation-iteration-count: infinite;
+    -webkit-animation: bounce 0.5s ease infinite; /* For Chrome, Safari, older iOS */
+    -moz-animation: bounce 0.5s ease infinite;    /*For Firefox */
+    -o-animation: bounce 0.5s ease infinite;      /* For Opera */
+    animation: bounce 0.5s ease infinite;         /* Standard for modern browsers */
 } 
 
 @keyframes bounce {
@@ -69,7 +71,6 @@ body {
 .profile-btn:active::after {
     opacity: 1;
     transform: translate(-50%, -10px); /* Moves text up slightly */
-    animation-iteration-count: infinite;
 }
 
 
