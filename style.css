@@ -1,3 +1,48 @@
+/* Creating Color Variables */
+:root {
+    /* Light colors */
+    --background: #dee2e6;
+    --primary: #ffffff;
+    --secondary: #ffffff;
+    --accent: #ffffff;
+
+    --text: #333333;
+    --subtext: #666666;
+    --link-text: #ffffff;
+
+    --container: #ffffff;
+
+    --ring-background: #ffffff;
+    --ring-tail-1: #fff000;
+    --ring-tail-2: #fff000;
+    --ring-ball: #fff000;
+    --ring-ball-shadow: #fff000;
+
+    --link-button: #007bff;
+    --link-button-hover: #0056b3;
+    
+    /* Dark Colors */
+    --background-dark: #2b2b2b;
+    --primary-dark: #ffffff;
+    --secondary-dark: #ffffff;
+    --accent-dark: #ffffff;
+
+    --text-dark: #dddddd;
+    --subtext-dark: #ccc;
+    --link-text-dark: #dddddd;
+
+    --container-dark: #141414;
+
+    --ring-background-dark: #ffffff;
+    --ring-tail-1-dark: #fff000;
+    --ring-tail-2-dark: #fff000;
+    --ring-ball-dark: #fff000;
+    --ring-ball-shadow-dark: #fff000;
+
+    --link-button-dark: #0056b3;
+    --link-button-hover-dark: #006fe6;
+  }
+
 /* Reset*/
 *{
     margin:0;
@@ -8,7 +53,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #dee2e6;
+    background-color: var(--background);
     text-align: center;
 }
 
@@ -16,7 +61,7 @@ body {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background: #ffffff;
+    background: var(--container);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
@@ -35,7 +80,7 @@ body {
   width:150px;
   height:150px;
   background:transparent;
-  border:3px solid #ffffff;
+  border:3px solid var(--ring-background);
   border-radius:50%;
   box-shadow:0 0 20px rgba(0,0,0,.5);
 }
@@ -48,8 +93,8 @@ body {
   width:100%;
   height:100%;
   border:3px solid transparent;
-  border-right:3px solid #fff000; /*First tail color*/
-  border-top:3px solid #fff000; /*Second tail color*/
+  border-right:3px solid var(--ring-tail-1); /*First tail color*/
+  border-top:3px solid var(--ring-tail-2); /*Second tail color*/
   border-radius:50%;
   animation:animateC 2s linear infinite;
 }
@@ -73,10 +118,10 @@ span:before
   width:16px;
   height:16px;
   border-radius:50%;
-  background:#fff000; /*Ball color*/
+  background: var(--ring-ball); /*Ball color*/
   top:-6px;
   right:-8px;
-  box-shadow:0 0 20px #fff000; /*Ball drop shadow*/
+  box-shadow:0 0 20px var(--ring-ball-shadow); /*Ball drop shadow*/
 }
 @keyframes animateC
 {
@@ -163,13 +208,13 @@ span:before
 h1 {
     padding-top: 10px;
     font-size: 24px;
-    color: #333;
+    color: var(--text);
     margin: 10px 0;
 }
 
 .bio {
     font-size: 18px;
-    color: #666;
+    color: var(--subtext);
     margin-bottom: 20px;
 }
 
@@ -182,8 +227,8 @@ h1 {
 .link-btn {
     display: block;
     padding: 12px;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: var(--link-button);
+    color: var(--link-text);
     text-decoration: none;
     border-radius: 5px;
     font-size: 18px;
@@ -191,7 +236,7 @@ h1 {
 }
 
 .link-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--link-button-hover);
 }
 
 /* Dark Mode Settings */
@@ -201,11 +246,11 @@ h1 {
     }
 
     body {
-        background: #2b2b2b;
+        background: var(--background-dark);
     }
     
     .container {
-        background: #141414;
+        background: var(--container-dark);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
     
@@ -215,18 +260,18 @@ h1 {
 
     .ring
     {
-    border:3px solid #ffffff;
+    border:3px solid var(--ring-background-dark);
     box-shadow:0 0 20px rgba(0,0,0,.5);
     }
     .ring:before
     {
-    border-right:3px solid #fff000; /*First tail color*/
-    border-top:3px solid #fff000; /*Second tail color*/
+    border-right:3px solid var(--ring-tail-1-dark); /*First tail color*/
+    border-top:3px solid var(--ring-tail-2-dark); /*Second tail color*/
     }
     span:before
     {
-    background:#fff000; /*Ball color*/
-    box-shadow:0 0 20px #fff000; /*Ball drop shadow*/
+    background: var(--ring-ball-dark); /*Ball color*/
+    box-shadow:0 0 20px var(--ring-ball-shadow-dark); /*Ball drop shadow*/
     }
 
     .profile-btn::after {
@@ -237,19 +282,19 @@ h1 {
 
     /*Text and Links Styles*/
     h1 {
-        color: #dddddd;
+        color: var(--text-dark);
     }
 
     .bio {
-        color: #ccc;
+        color: var(--subtext-dark);
     }   
 
     .link-btn {
-        background-color: #0056b3;
-        color: #dddddd;
+        background-color: var(--link-button-dark);
+        color: var(--link-text-dark);
     }
 
     .link-btn:hover {
-        background-color: #006fe6;
+        background-color: var(--link-button-hover-dark);
     }
   }
