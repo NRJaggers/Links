@@ -116,7 +116,7 @@ span:before
     overflow: visible;
 }
 
-.profile-btn:active .profile-pic {
+.profile-btn:hover .profile-pic {
     -webkit-animation: bounce 0.5s ease ; /* For Chrome, Safari, older iOS */
     -moz-animation: bounce 0.5s ease ;    /*For Firefox */
     -o-animation: bounce 0.5s ease ;      /* For Opera */
@@ -149,7 +149,7 @@ span:before
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.profile-btn:active::after {
+.profile-btn:hover::after {
     opacity: 1;
     transform: translate(-50%, -10px); /* Moves text up slightly */
 }
