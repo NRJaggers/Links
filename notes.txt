@@ -1,0 +1,8 @@
+Notes on things to add:
+I can add my email to the page either as text with the tagline or in a contact 
+me section, or maybe I can make it a clickable link. Maybe I can make it a form 
+where I have them send me a message from right within the page.
+
+Notes on things to change:
+I can change the tagline to something more like "Connect with me" to engourage 
+people to reach out or connect with me on LinkedIn or where ever else.
